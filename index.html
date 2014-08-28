@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<nav> <!-- DO I NEED TO PUT THIS NAV INSIDE A DIV? SEEMS LIKE THAT JUST MAKES FORMATTING MORE COMPLICATED... -->
+<div> <!-- I THOUGHT ABOUT DOING JUST <BR /> TAGS INSTEAD OF DIVS HERE...BUT THAT SEEMED LAZY. THOUGHTS? MAYBE UL VS. DIV? -->
+<a href="http://www.home.com">Home</a>
+</div>
+<div>
+<a href="http://www.nsa.org">Edit Contact Info</a>
+</div>
+<div>
+<a href="http://www.espn.com">Statistics</a>
+</div>
+<div>
+<a href="http://www.loser.com">Log Out</a>
+</div>
+</nav>
+
+<section class="column"> <!-- FORM COLUMN -->
+
+  <form>
+    <ul>
+      <li>
+        <div class="labelz">     <!-- I DID THESE AS DIVS SO I COULD SET EQUAL WIDTH FOR EACH LABEL AND THEN HAVE THE INPUTS ALL LINE UP VERTICALLY. MAYBE THIS WAS NOT THE BEST PRACTICE THOUGH. -->
+        <label for="name">Name</label>
+        </div>
+        <!-- <div class="inputz">     NEEDED? -->
+          <input type="text" placeholder="Name" id="name" name="user_name"/>
+        <!-- </div> -->
+      </li>
+      <li>
+        <div class="labelz">
+        <label for="email">E-mail</label>
+        </div>
+          <input type="text" placeholder="E-Mail" id="email" name="user_email"/>
+      </li>
+      <li>
+        <div class="labelz">
+        <label for="City">City</label>
+        </div>
+          <input type="text" placeholder="City" id="city" name="user_city"/>
+      </li>
+      <li>
+        <div class="labelz">
+        <label for="State/Province">State/Province</label>
+        </div>
+          <input type="text" placeholder="State/Province" id="state/province" name="user_state/province"/>
+      </li>
+      <li>
+        <div class="labelz">
+        <label for="Country">Country</label>
+        </div>
+          <input type="text" placeholder="Country" id="country" name="user_country"/>
+      </li>
+
+                  <li>
+                    <input class="gradient" type="submit" value="Update" class="button" />
+                  </li>
+    </ul>
+  </form
+
+</section> <!-- END FORM COLUMN -->
+
+</body>
+</html>

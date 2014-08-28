@@ -1,0 +1,105 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 227px;
+  display: inline-block;
+  width: 20%
+
+  /* float: left; FIXED BY MAKING WIDTH LESS THAN INITIAL 25%?: WERE WE SUPPOSED TO BE ABLE TO DO THIS WITH JUST DISPLAY: INLINE-BLOCK AND NO FLOAT? IT COULDN'T GET IT TO WORK 'TIL I ADDED THIS FLOAT BUT I DON'T SEE FLOAT IN THE LEARNLAYOUT EXAMPLE...' */
+
+}
+
+nav div {
+  border: 5px solid yellow;
+  padding: 13px;
+  margin-left: 10px;
+  text-align: center;
+  background-color: silver;
+}
+
+nav div:first-child{
+  border-top: 10px solid yellow;
+}
+
+nav div:last-child{
+  border-bottom: 10px solid yellow;
+}
+
+nav div a {
+  color: green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav div a:hover{
+  color: red;
+}
+
+.column {
+  display: inline-block;
+  width: 75%;
+  vertical-align: top;
+}
+
+ul {
+  list-style: none;
+}
+
+form li {
+                      /*NOTHING FOR NOW...*/
+}
+
+
+.labelz {
+  display: inline-block;
+  width: 100px;
+  outline: 2px dotted silver;
+}
+
+li input {
+  display: inline-block;
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+  appearance: none;          /* THIS LINE AND COMMENT ADDED AFTER YOU HIPCHATTED US ABOUT "APPEARANCE". THE TWO LINES AND COMMENT BELOW WERE ALREADY IN PLACE...*/
+  -webkit-appearance : none; /* CORRECT USAGE OR AT LEAST WHERE YOU INTENDED US TO USE THE APPEARANCE PROPERTY? */
+  -moz-appearance : none;
+
+
+
+-moz-box-shadow: inset 0 0 5px #888;
+-webkit-box-shadow: inset 0 0 5px#888;
+box-shadow: inner 0 0 5px #888;    /*WEIRD. NO NEED TO COMMENT ON THIS ONE IF IT'S NOT WORTH IT, BUT I'M ONLY GETTING SOME LINT FROM MY FAVORITE OF THE SIX OPTIONS AT http://www.css3.info/preview/box-shadow/. THE OTHER DON'T LOOK AS GOOD BUT WORK JUST FINE */
+
+}
+
+.gradient {
+  background-image:
+    radial-gradient(yellow,#f06d06);
+    -moz-box-shadow: 0 0 5px 5px #888;
+    -webkit-box-shadow: 0 0 5px 5px#888;
+    box-shadow: 0 0 5px 5px #888;
+
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+
+
+/*
+.labelz {
+  display: block;
+}
+*/
+
+
+
+/*
+.first{
+display: inline-block;
+width: 20%;
+}
+*/
